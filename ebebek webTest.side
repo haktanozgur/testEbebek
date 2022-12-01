@@ -1,0 +1,314 @@
+{
+  "id": "f9203b0b-d7d6-47db-9213-1ccbf7d4a2f7",
+  "version": "2.0",
+  "name": "ebebek webTest",
+  "url": "https://www.e-bebek.com",
+  "tests": [{
+    "id": "53862b71-2d0e-4e2e-b569-792a12f3e191",
+    "name": "addProduct",
+    "commands": [{
+      "id": "aa7a8d60-8745-4678-b2b4-701d3d85b6b4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f99ff1e-a330-45c1-8abb-68a9e53a2f51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c3ad796-aa17-434f-9430-00ac23f5207f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.container-fluid .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.container-fluid .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//li[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb1d4e6-84c6-4f18-8d8c-050c1dc8e5ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c8f33c7-07dc-4f8d-900e-62af172f36af",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "biberon"
+    }, {
+      "id": "19bc4150-207b-42bb-aa22-c4b3db2c08dd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c7cdef0e-ed8f-4dc7-b3b0-847973f5399b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted",
+      "targets": [
+        ["css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted", "css:finder"],
+        ["xpath=//img[@alt='Lansinoh Hoşgeldin Bebek Biberon Seti']", "xpath:img"],
+        ["xpath=//figure/cx-media/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55bdd0b7-258f-42a8-bc6c-b3efdc8231b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,10)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93edbf0e-ed28-4084-b19f-f6e40ae80cdb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Lansinoh",
+      "targets": [
+        ["linkText=Lansinoh", "linkText"],
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted > .product-info .title-brand", "css:finder"],
+        ["xpath=(//a[contains(text(),'Lansinoh')])[2]", "xpath:link"],
+        ["xpath=//h1[@id='txtBrandName']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lansinoh-b812')])[3]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6756efc-ca6d-4daf-8c85-9f5900cde797",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,31)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8838346-b8ef-4b39-b5c4-9996786f6418",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartBtn",
+      "targets": [
+        ["id=addToCartBtn", "id"],
+        ["css=.ng-star-inserted:nth-child(4) > .ng-untouched > #addToCartBtn", "css:finder"],
+        ["xpath=//button[@id='addToCartBtn']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sepete Ekle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1021adb-1f5a-4285-a228-bbbfeb9da5c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnShowCart",
+      "targets": [
+        ["id=btnShowCart", "id"],
+        ["linkText=Sepeti Gör", "linkText"],
+        ["css=#btnShowCart", "css:finder"],
+        ["xpath=//a[contains(text(),'Sepeti Gör')]", "xpath:link"],
+        ["xpath=//a[@id='btnShowCart']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sepeti Gör')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "242e349d-c27b-4fa5-8108-1709e6853e5d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,10.5)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bad464e4-aee9-4202-b4c3-8bc748f01d0f",
+    "name": "deleteproduct",
+    "commands": [{
+      "id": "c99b3f92-d728-4729-8fc8-d47543af5667",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c9a1019-c330-4acf-9f6b-db5b54b48f52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a369745e-5046-4d4f-9113-dc20d94905a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef4fe38-d771-45bd-83c7-a3f7424a3d37",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "biberon"
+    }, {
+      "id": "feae7b63-4206-4fc7-8837-0f926a74a9b1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtSearchBox",
+      "targets": [
+        ["id=txtSearchBox", "id"],
+        ["css=#txtSearchBox", "css:finder"],
+        ["xpath=//input[@id='txtSearchBox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2645c83a-432b-4bc8-a04d-5f2da9f87659",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted",
+      "targets": [
+        ["css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted", "css:finder"],
+        ["xpath=//img[@alt='Lansinoh Hoşgeldin Bebek Biberon Seti']", "xpath:img"],
+        ["xpath=//figure/cx-media/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "409c59ac-8279-4888-a189-e404eda52b43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted",
+      "targets": [
+        ["css=.col-6:nth-child(1) .is-initialized > .ng-star-inserted", "css:finder"],
+        ["xpath=//img[@alt='Lansinoh Hoşgeldin Bebek Biberon Seti']", "xpath:img"],
+        ["xpath=//figure/cx-media/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bb1c3ab-1886-4e18-9a2d-cd7701c4e96a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=addToCartBtn",
+      "targets": [
+        ["id=addToCartBtn", "id"],
+        ["css=.ng-star-inserted:nth-child(4) > .ng-untouched > #addToCartBtn", "css:finder"],
+        ["xpath=//button[@id='addToCartBtn']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sepete Ekle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a69ac5b0-ff04-4fdb-b0e8-cb549de2863f",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartBtn",
+      "targets": [
+        ["id=addToCartBtn", "id"],
+        ["css=.ng-star-inserted:nth-child(4) > .ng-untouched > #addToCartBtn", "css:finder"],
+        ["xpath=//button[@id='addToCartBtn']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sepete Ekle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22f08530-d8fb-4137-bd63-c37b31393500",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=addToCartBtn",
+      "targets": [
+        ["id=addToCartBtn", "id"],
+        ["css=.ng-submitted > #addToCartBtn", "css:finder"],
+        ["xpath=//button[@id='addToCartBtn']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sepete Ekle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9d11f3d-a7ed-437a-9fb1-9c9dca47ebab",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnShowCart",
+      "targets": [
+        ["id=btnShowCart", "id"],
+        ["linkText=Sepeti Gör", "linkText"],
+        ["css=#btnShowCart", "css:finder"],
+        ["xpath=//a[contains(text(),'Sepeti Gör')]", "xpath:link"],
+        ["xpath=//a[@id='btnShowCart']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sepeti Gör')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bef2d45-5836-4e5b-82b6-17b23b39572f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnRemoveProduct",
+      "targets": [
+        ["id=btnRemoveProduct", "id"],
+        ["css=#btnRemoveProduct", "css:finder"],
+        ["xpath=//button[@id='btnRemoveProduct']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "135c8cf0-6cf8-48d3-84fc-3ec18bee398c",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnRemoveProduct",
+      "targets": [
+        ["id=btnRemoveProduct", "id"],
+        ["css=#btnRemoveProduct", "css:finder"],
+        ["xpath=//button[@id='btnRemoveProduct']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7d1e124d-9332-47bb-a223-e0ed14db77dd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53862b71-2d0e-4e2e-b569-792a12f3e191"]
+  }],
+  "urls": ["https://www.e-bebek.com/"],
+  "plugins": []
+}
